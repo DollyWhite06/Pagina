@@ -1,286 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ReGeneration</title>
 
-    <link rel="shortcut icon" href="assets/crown_logo_white.png" id="favicon" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.1.0/css/all.css"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link href="plugins/aos/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="plugins/fullPage.js-msater/fullpage.min.css" />
+  <!-- Preconexión para mejorar la carga de fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Precarga de fuentes críticas -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-    <title>ReGeneration</title>
-  </head>
-  <body class="scroll-y-none">
-    <!-- <nav class="navbar navbar-dark p-sticky">
-      <div class="" id="span_icon">
-        <a href="#">
-          <img src="assets/icon-logo-azul-claro.png" alt="logo floating" class="img-responsive">
-        </a>
+  <!-- Optimización de favicon -->
+  <link rel="icon" type="image/webp" href="assets/crown_logo_white.webp">
+  
+  <!-- Minificación de CSS recomendada -->
+  <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="stylesheet" href="plugins/aos/aos.min.css">
+  <link rel="stylesheet" href="plugins/fullPage.js-msater/fullpage.min.css">
+
+  <!-- Carga diferida de FontAwesome -->
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.0/css/all.css" media="print" onload="this.onload=null;this.removeAttribute('media');">
+  
+  <!-- Deferir scripts para mejorar rendimiento -->
+  <script defer src="js/main.min.js"></script>
+</head>
+<body class="scroll-y-none">
+
+  <span class="d-none" id="span_icon">
+    <a href="#">
+      <img src="assets/crown_logo.webp" alt="logo floating" loading="lazy">
+    </a>
+  </span>
+
+  <div class="container-full d-flex justify-content-center text-center bg-blue">
+    <section class="h-100 p-0" id="section_hero">
+      <div class="h-100 w-100 bg-dark hero" id="intro_logo">
+        <img src="assets/crown_logo_white.webp" class="img-sm" alt="logo RE" id="logo_intro" loading="lazy">
       </div>
-      <div class="fw-900">ReGeneration</div>
+    </section>
+  </div>
 
-      <ul class="d-flex">
-        <li><a href="#section_hero">ReGeneration</a></li>
-        <li><a href="#section_we_are">NOT WE'ARE</a></li>
-        <li><a href="#section_carbon">Carbon NATURAL</a></li>
-      </ul>
-    </nav> -->
+        <!--primeras correcciones-->
+ <!-- Preconexión para mejorar la carga de fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Precarga de fuentes críticas -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-    <span class="d-none" id="span_icon">
-      <a href="#">
-        <img src="assets/crown_logo.png" alt="logo floating" class="" />
-      </a>
-    </span>
+  <!-- Optimización de favicon -->
+  <link rel="icon" type="image/webp" href="assets/crown_logo_white.webp">
+  
+  <!-- Minificación de CSS recomendada -->
+  <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="stylesheet" href="plugins/aos/aos.min.css">
+  <link rel="stylesheet" href="plugins/fullPage.js-msater/fullpage.min.css">
 
-    <div
-      class="container-full d-flex justify-content-center text-center bg-blue"
-    >
-      <section class="h-100 p-0" id="section_hero">
-        <div class="h-100 w-100 bg-dark hero" id="intro_logo">
-          <img
-            src="assets/crown_logo_white.png"
-            class="img-sm"
-            alt="logo RE"
-            id="logo_intro"
-          />
-        </div>
-        <!-- <div class="h-100 w-100 bg-light hero d-none" id="intro_1">
-          <h1>INTRO #1</h1>
-        </div> -->
-        <!-- <div class="h-100 w-100 bg-dark hero d-none" id="intro_2">
-          <h1>INTRO #2</h1>
-        </div> -->
-        <!-- <div class="h-100 w-100 bg-light hero d-none" id="intro_3">
-          <img
-            src="assets/hamburgers/Hamburger-5-azul-claro.png"
-            alt="img hamburger-5"
-            class="img-5"
-          />
-        </div> -->
+  <!-- Carga diferida de FontAwesome -->
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.0/css/all.css" media="print" onload="this.onload=null;this.removeAttribute('media');">
+  
+  <!-- Deferir scripts para mejorar rendimiento -->
+  <script defer src="js/main.min.js"></script>
+</head>
+<body class="scroll-y-none">
 
-        <div class="p-relative d-flex justify-content-center" id="hero">
-          <img
-            src="assets/main-logo.png"
-            alt="main-logo-royal"
-            class="img-hero"
-            id="img_hero_1"
-          />
-          <img src="assets/arroba-clara.png" alt="arroba" class="img-sm" />
-          <img
-            src="assets/logotipo.png"
-            alt="logotipo-molly-burguers"
-            class="img-hero"
-            id="img_hero_2"
-          />
-        </div>
-      </section>
+  <span class="d-none" id="span_icon">
+    <a href="#">
+      <img src="assets/crown_logo.webp" alt="logo floating" loading="lazy">
+    </a>
+  </span>
 
-      <hr
-        class="separator"
-        data-aos="slide-down"
-        data-aos-duration="5200"
-        data-aos-easing="ease-in-out-back"
-        data-aos-anchor-placement="center-bottom"
-      />
+  <div class="container-full d-flex justify-content-center text-center bg-blue">
+    <section class="h-100 p-0" id="section_hero">
+      <div class="h-100 w-100 bg-dark hero" id="intro_logo">
+        <img src="assets/crown_logo_white.webp" class="img-sm" alt="logo RE" id="logo_intro" loading="lazy">
+      </div>
+    </section>
+  </div>
 
-      <section class="" id="section_we_are">
-        <div class="container-grid-rows justify-items-center">
-          <div
-            class="d-flex align-items-center"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out-back"
-            data-aos-anchor-placement="center-bottom"
-          >
-            <img
-              src="assets/logo-complete.png"
-              alt="logo-regeneration"
-              class="img-75"
-            />
-            <p class="">
-              The generation determined to learn from their roots and create
-              lasting change to restore our world.
-            </p>
-          </div>
-
-          <div>
-            <h1
-              class="title"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out-back"
-              data-aos-anchor-placement="center-bottom"
-            >
-              WE'RE NOT GEN Y
-            </>
-            <h1
-              class="title"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out-back"
-              data-aos-anchor-placement="center-bottom"
-            >
-              WE'RE NOT GEN Z
-            </h1>
-          </div>
-
-          <div class="d-flex align-items-center">
-            <h1
-              class="title text-light"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out-back"
-              data-aos-anchor-placement="center-bottom"
-            >
-              WE ARE THE [RE]GENERATION
-            </h1>
-            <p
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out-back"
-              data-aos-anchor-placement="center-bottom"
-            >
-              Royal Family Farming wants to bring a new community together to
-              uplift and reinvigorate through connections with ourselves, each
-              other, and our earth.
-            </p>
-            <a href="https://subscribepage.io/jointheregeneration" target="_blank">
-               <img
-                 src="assets/join-us.PNG"
-                 alt="img join us"
-                 class="img-75"
-                 data-aos="fade-up"
-                 data-aos-duration="1000"
-                 data-aos-easing="ease-in-out-back"
-                 data-aos-anchor-placement="center-bottom"
-               />
-            </a>
-            <p
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out-back"
-              data-aos-anchor-placement="center-bottom"
-            >
-              for workshops, social media chats, and more. We want to
-              collaborate on how to create change in our world, a world that
-              needs more than to be sustained, it needs to be healed.
-            </p>
-            <div
-              class="d-flex img-container-25 border-circle border-md mx-auto"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out-back"
-              data-aos-anchor-placement="center-bottom"
-            >
-              <img
-                src="assets/Austin_kids.jpg"
-                alt="img cowboys family"
-                class="img-responsive"
-              />
-            </div>
-            <h1
-              class="title"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out-back"
-              data-aos-anchor-placement="center-bottom"
-            >
-              LET’S DO THIS TOGETHER!
-            </h1>
-          </div>
-        </div>
-      </section>
-
-      <hr
-        class="separator"
-        data-aos="slide-down"
-        data-aos-duration="5200"
-        data-aos-easing="ease-in-out-back"
-        data-aos-anchor-placement="center-bottom"
-      />
-
-      <section class="justify-items-center" id="section_carbon">
-        <div class="d-flex align-items-center">
-          <h2
-            class="subtitle"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out-back"
-            data-aos-anchor-placement="center-bottom"
-          >
-            Construction of your
-          </h2>
-          <h1
-            class="title"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out-back"
-            data-aos-anchor-placement="center-bottom"
-          >
-            CARBON NATURAL
-          </h1>
-          <img
-            src="assets/molly-burgers.png"
-            alt="logo molly burguers"
-            class="img-75 py-1"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out-back"
-            data-aos-anchor-placement="center-bottom"
-          />
-          <h1
-            class="title"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out-back"
-            data-aos-anchor-placement="center-bottom"
-          >
-            INTRO:
-          </h1>
-          <p
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out-back"
-            data-aos-anchor-placement="center-bottom"
-          >
-            A top-notch burger starts with simple ingredients, and they’re even
-            better when they’re local and sustainable. With beef (and milk!)
-            sourced from Royal Family Farming in Royal City, WA. Regenerative
-            farming is better for the farmers, the cows, the land, and the
-            community.
-          </p>
-          <div
-            class="d-flex img-container-25 border-circle border-md mx-auto"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out-back"
-            data-aos-anchor-placement="center-bottom"
-          >
-            <img
-              src="assets/1-person.png"
-              alt="img cowboys family"
-              class="img-responsive"
-            />
-          </div>
-        </div>
-      </section>
-
+  <section class="justify-items-center" id="section_carbon">
+    <div class="d-flex align-items-center">
+      <h2 class="subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-back" data-aos-anchor-placement="center-bottom">Construction of your</h2>
+      <h1 class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-back" data-aos-anchor-placement="center-bottom">CARBON NATURAL</h1>
+      <img src="assets/molly-burgers.webp" alt="logo molly burguers" class="img-75 py-1" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-back" data-aos-anchor-placement="center-bottom" loading="lazy">
+      <h1 class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-back" data-aos-anchor-placement="center-bottom">INTRO:</h1>
+      <p data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-back" data-aos-anchor-placement="center-bottom">A top-notch burger starts with simple ingredients, and they’re even better when they’re local and sustainable. With beef (and milk!) sourced from Royal Family Farming in Royal City, WA. Regenerative farming is better for the farmers, the cows, the land, and the community.</p>
+      <div class="d-flex img-container-25 border-circle border-md mx-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-back" data-aos-anchor-placement="center-bottom">
+        <img src="assets/1-person.webp" alt="img cowboys family" class="img-responsive" loading="lazy">
+      </div>
+    </div>
+  </section>
+        <!--segundas correcciones-->
       <hr
         class="separator"
         data-aos="slide-down"
